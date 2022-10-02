@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/d3@5.9.7/dist/d3.min.js"></script>
+    <script src="js/script.js" defer></script>
+    <script src="https://kit.fontawesome.com/1aa3a25b18.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <a href="#top"><div class="arrow-up"><i class="fas fa-arrow-up"></i></div></a>
+    <header class="main-header">
+        <nav class="nav-header">
+            <div class="brand-logo" >
+                <a href="index.html">
+                    <img src="images/ArtistLogo.png" alt="logo">
+                </a>
+            </div>
+            <div class="nav-links" >
+                <ul>
+                    <li><a href="index.html">Home</a><span class="indicator-links"></span></li>
+                    <li><a href="#albumes">Albumes</a><span class="indicator-links"></span></li>
+                    <li><a href="#about">About</a><span class="indicator-links"></span></li>
+                    <li><a href="#music">Music</a><span class="indicator-links"></span></li>
+                    <li><a href="#project">Project</a><span class="indicator-links"></span></li>
+                    <li><a href="#contact">Contact</a><span class="indicator-links"></span></li>
+                </ul>
+                
+            </div>
+            <div class="social-icons">
+                <ul>
+                    <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href="https://www.twitter.com/"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="https://www.pinterest.com/"><i class="fa-brands fa-pinterest-p"></i></a></li>
+                    <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
+                </ul>
+            </div>
+            <button class="toggle-btn">
+                <i class="fa-solid fa-bars" id="open"></i>
+                <i class="fa-solid fa-xmark" id="close" style="display:none;"></i>
+            </button>
+            
+        </nav>
+        <section>
+            <div class="main-content base-container">
+                <div class="floating-icons">
+                    <img src="images/Vector.png" alt="Music">
+                    <img src="images/Vector.png" alt="Music">
+                    <img src="images/Vector.png" alt="Music">
+                    <img src="images/Vector.png" alt="Music">
+                    <img src="images/Vector.png" alt="Music">
+                </div>
+                <div class="main-content-elements">
+                    <div class="main-content-text" data-aos="fade-down" data-aos-duration="1200">
+                        <h1>The Happiness of Music</h1>
+                        <p>We are pleased to invite you all to our club to dance to the best music since DJ Alisa is one of the best DJs in Europe.</p>
+                        <button>Contact us</button>
+                    </div>
+                    <div class="main-content-image" data-aos="fade-left" data-aos-duration="1200">
+                        <img src="images/artist.png" alt="Alisa Picture">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main>
+        <section class="latest" id="albumes">
+            <div class="base-container latest-boxs" data-aos="fade-up" data-aos-duration="1200">
+                <div class="latest-header">
+                    <div>
+                        <h1>Latest Release</h1>
+                        <p>So we are glad to invite you all into our club to dance on the best music to all time best noise..</p>
+                    </div>
+                    <div>
+                        <ul class="control" id="custom-control">
+                            <li class="prev"><i class="fas fa-angle-left fa-2x"></i></li>
+                            <li class="next"><i class="fas fa-angle-right fa-2x"></i></li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <h3 style="padding: 0 10px;">Choose a year</h3>
+                    <div class="select-box">
+                        <select name="year" id="year-select">
+                           <option value="2022">2022</option>
+                           <option value="2021">2021</option>
+                           <option value="2020">2020</option>
+                           <option value="2019">2019</option>
+                           <option value="2018">2018</option>
+                        </select>
+                     </div>
+                </div>
+                <div class="slider-container-box">
+
+                    <!-- <div class="albume-box">
+                        <img src="images/albumepic1.png" alt="albume image">
+                        <h1>Albume Name</h1>
+                        <p>Releases: <span>20-5-2005</span></p>
+                        <p>Label: <span>I'm the best</span></p>
+                        <p>Format: <span>Digital</span></p>
+                        <p>Download: <span>CD</span></p>
+                        <p>Certification: <span>Gold</span></p>
+                    </div>-->
+
+                </div>
+            </div>
+        </section>
+        <section id="about">
+            <div class="base-container about-container" data-aos="fade-up" data-aos-duration="1400" data-aos-easing="linear">
+                <div class="about-pic">
+                    <img src="images/About me pic.png" alt="Alisa Picture">
+                </div>
+                <div class="about-header">
+                    <h1>About Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque iusto sit optio eos nobis ipsum commodi similique rerum cumque.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque iusto sit optio eos nobis ipsum commodi similique rerum cumque, error facere quo delectus aspernatur. Expedita, quidem quos dolore sunt omnis fuga dolor.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque iusto sit optio eos nobis ipsum commodi similique rerum cumque, error facere quo delectus aspernatur. </p>
+                    <button>Know More</button>
+
+                </div>
+            </div>
+
+        </section>
+        <section class="background-section" data-aos="fade-up" data-aos-duration="1400" id="music">
+            <div class="latest-videos-container base-container">
+                <div class="videos-header" >
+                    <h1>Latest Videos</h1>
+                    <p>So we are glad to invite you all into our club to dance on the best music to all time best noise..</p>
+                </div>
+                <div>
+                    <h3 style="padding: 0 10px;">Choose Albume</h3>
+                    <div class="select-box">
+                        <select name="year" id="select-albume">
+                        </select>
+                     </div>
+                </div>
+                <div class="videos-container">
+                    <div class="left-video-container">
+                        <div class="left-video-box">
+                            <div class="video-img">
+                                <img id="main-pic" src="images/video1.png" alt="" style="max-height: 360px;">
+                                <div class="play-icon">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                            <div class="details-video">
+                                <h1 id="song-title-main-video">Song Title</h1>
+                                <div class="video-description">
+                                    <i class="fa-regular fa-clock"></i>
+                                    <span id="duration">3:35</span>
+                                    <span class="line"></span>
+                                    <i class="fa-solid fa-eye"></i>
+                                    <span id="total-watch">10</span><span>M</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-videos-container">
+                        <div class="right-video-box">
+                            <img id="top-pic" src="images/video2.png" alt="sont title">
+                            <div class="right-vidoes-details">
+                                <h1 id="top-video-title">Best of Music</h1>
+                                <p id="industry-top-vidio">Industry</p>
+                                <div class="right-video-description">
+                                    <i class="fa-regular fa-clock"></i>
+                                    <span id="duration-top-video">3:35</span>
+                                    <i class="fa-solid fa-eye"></i>
+                                    <span id="total-watch-top-video">10</span><span>M</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right-video-box">
+                            <img id="middle-pic" src="images/video3.png" alt="sont title">
+                            <div class="right-vidoes-details">
+                                <h1 id="middle-video-title">Best of Music</h1>
+                                <p id="industry-middle-vidio">Industry</p>
+                                <div class="right-video-description">
+                                    <i class="fa-regular fa-clock"></i>
+                                    <span id="duration-middle-video">3:35</span>
+                                    <i class="fa-solid fa-eye"></i>
+                                    <span id="total-watch-middle-video">10</span><span>M</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right-video-box">
+                            <img id="last-pic" src="images/video4.png" alt="sont title">
+                            <div class="right-vidoes-details">
+                                <h1 id="last-video-title">Best of Music</h1>
+                                <p id="industry-last-vidio">Industry</p>
+                                <div class="right-video-description">
+                                    <i class="fa-regular fa-clock"></i>
+                                    <span id="duration-last-video">3:35</span>
+                                    <i class="fa-solid fa-eye"></i>
+                                    <span id="total-watch-last-video">10</span><span>M</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section data-aos="fade-up" data-aos-duration="1400" id="project">
+            <div class="base-container where-iwork">
+                <h1>Where Do I Work</h1>
+                <p>So we are glad to invite you all into our club to dance on the best music to all time best noise..</p>
+                <div class="work-sliders-container" >
+                    <div class="work-box">
+                        <img src="images/work1.png" alt="Party Picture">
+                        <h2>Party Events</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, fugit?</p>
+                    </div>
+                    <div class="work-box">
+                        <img src="images/work2.png" alt="Party Picture">
+                        <h2>birthday Party</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, fugit?</p>
+                    </div>
+                    <div class="work-box">
+                        <img src="images/work3.png" alt="Party Picture">
+                        <h2>wedding Events</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, fugit?</p>
+                    </div>
+                    <div class="work-box">
+                        <img src="images/work4.png" alt="Party Picture">
+                        <h2>Party Events</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, fugit?</p>
+                    </div>
+                </div>
+                <div class="buttom-nav-control">
+                    <ul class="control" id="custom-control-two">
+                        <li class="prev"><i class="fas fa-angle-left fa-2x"></i></li>
+                        <li class="next"><i class="fas fa-angle-right fa-2x"></i></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="background-section-footer">
+            <div class="base-container reviews">
+                <div class="reviews-header">
+                    <h1>What People Say</h1>
+                    <p>So we are glad to invite you all into our club to dance on the best music to all time best noise..</p>
+                </div>
+                <div class="footersliders" data-aos="fade-up" data-aos-duration="1400">
+                    <div class="reviews-container">
+                        <div class="review-box">
+                            <div class="review-details">
+                                <div class="review-img">
+                                    <img src="images/person2.png" alt="Reviewer Picture">
+                                    <h1>Aderyn Eli</h1>
+                                </div>
+                                <div class="review-text">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi dolores, tempore autem mollitia architecto, explicabo tenetur assumenda recusandae itaque asperiores.</p>
+                                    <img src="images/nayo2.svg" alt="">
+                                    <img src="images/nayo2.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review-box">
+                            <div class="review-details">
+                                <div class="review-img">
+                                    <img src="images/person1.png" alt="Reviewer Picture">
+                                    <h1>John Doe</h1>
+                                </div>
+                                <div class="review-text">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi dolores, tempore autem mollitia architecto, explicabo tenetur assumenda recusandae itaque asperiores.</p>
+                                    <img src="images/nayo2.svg" alt="">
+                                    <img src="images/nayo2.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review-box">
+                            <div class="review-details">
+                                <div class="review-img">
+                                    <img src="images/person3.png" alt="Reviewer Picture">
+                                    <h1>Mildred Dobbs</h1>
+                                </div>
+                                <div class="review-text">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi dolores, tempore autem mollitia architecto, explicabo tenetur assumenda recusandae itaque asperiores.</p>
+                                    <img src="images/nayo2.svg" alt="">
+                                    <img src="images/nayo2.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review-box">
+                            <div class="review-details">
+                                <div class="review-img">
+                                    <img src="images/person5.png" alt="Reviewer Picture">
+                                    <h1>Winifred Sandra</h1>
+                                </div>
+                                <div class="review-text">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi dolores, tempore autem mollitia architecto, explicabo tenetur assumenda recusandae itaque asperiores.</p>
+                                    <img src="images/nayo2.svg" alt="">
+                                    <img src="images/nayo2.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review-box">
+                            <div class="review-details">
+                                <div class="review-img">
+                                    <img src="images/person4.png" alt="Reviewer Picture">
+                                    <h1>James Roderick</h1>
+                                </div>
+                                <div class="review-text">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi dolores, tempore autem mollitia architecto, explicabo tenetur assumenda recusandae itaque asperiores.</p>
+                                    <img src="images/nayo2.svg" alt="">
+                                    <img src="images/nayo2.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="buttom-nav-control">
+                    <ul class="control" id="custom-control-footer-slider">
+                        <li class="prev"><i class="fas fa-angle-left fa-2x"></i></li>
+                        <li class="next"><i class="fas fa-angle-right fa-2x"></i></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="base-container chart-one" data-aos="fade-up" data-aos-duration="1200">
+                <svg id="chart"></svg>
+                <div class="chart-one-text">
+                    <h1>Our Songs Views this year</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam excepturi ipsam illum quos aliquid, provident, qui dignissimos quo cupiditate voluptatem corporis atque labore tempore placeat corrupti accusamus quidem deleniti possimus..</p>
+                </div>
+            </div>
+            <div class="base-container pie-char" data-aos="fade-up" data-aos-duration="1000">
+                <div class="pie-chart-text">
+                    <h1>Best Albums Sales</h1>
+                    <p>ipsam illum quos aliquid, provident, qui dignissimos quo cupiditate voluptatem corporis atque labore tempore placeat corrupti accusamus quidem deleniti possimus..</p>
+                </div>
+                <div id="my_dataviz"></div>
+            </div>
+        </section>
+    </main>
+    <footer id="contact">
+        <section class="base-container email-section" data-aos="fade-up" data-aos-duration="1400">
+            <!-- <img src="images/email-bg.png" alt=""> -->
+            <div class="email-container">
+                <div class="email-box">
+                    <h1>Newsletter</h1>
+                    <p>So we are glad to invite you all into our club to dance on</p>
+                </div>
+                <div class="input-form">
+                    <form action="">
+                        <input type="email" placeholder="Enter your email">
+                        <button>SUBSCRIBE</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="footer">
+            <div class="base-container footer-container">
+                <div class="info-logo">
+                    <a href="index.html"><img src="images/ArtistLogo.png" alt="Alisa Logo"></a>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus cupiditate officiis iste explicabo. Explicabo, vero?</p>
+                </div>
+                <div class="info-social-media">
+                    <div class="social-media">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                    <p>Send us a question <a href="mailto: Contact@Alisa.me">Contact@Alisa.me</a></p>
+                </div>
+                
+            </div>
+            <div class="base-container down-footer">
+                <hr>
+                <p>© | Alright Reserved By Alisa</p>
+            </div>
+        </section>
+    </footer>
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+</body>
+</html>
